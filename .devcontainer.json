@@ -1,0 +1,23 @@
+{
+    "name": "lqdev.me .NET DevContainer",
+    "image": "mcr.microsoft.com/devcontainers/base:debian",
+    "features": {
+        "ghcr.io/devcontainers/features/git:1": {},
+        // "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/dotnet:2": {
+            "version": "9.0"
+        },
+        "ghcr.io/prulloac/devcontainer-features/ollama:1": {
+            "pull": "gemma3:4b"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                // "ms-vscode-remote.vscode-remote-extensionpack",
+                // "ms-azuretools.vscode-docker",
+                "ms-dotnettools.csharp"
+            ]
+        }
+    }
+}

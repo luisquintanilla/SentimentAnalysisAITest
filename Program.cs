@@ -12,7 +12,7 @@ IChatClient chatClient =
         AIProviders.GitHub => 
             new ChatCompletionsClient(
                 new Uri("https://models.inference.ai.azure.com"),
-                new AzureKeyCredential(Environment.GetEnvironmentVariable("GH_TOKEN")))
+                new AzureKeyCredential(Environment.GetEnvironmentVariable("GITHUB_TOKEN")))
                 .AsChatClient("mistral-small-2503"), // Mistral Small 3.1
         AIProviders.Ollama => 
             new OllamaApiClient("http://localhost:11434", "gemma3:4b"),
